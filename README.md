@@ -8,8 +8,12 @@
 <p>
   Mac 		 	执行./adb devices</p>
 <p>
-  Winodows 	执行adb devices
-</p>
+  Winodows 	执行adb devices </p>
+
+![WeChatd855c27c61e2da5a5bc307bc4667b983](/Users/laoliu/Library/Containers/com.tencent.xinWeChat/Data/Library/Caches/com.tencent.xinWeChat/2.0b4.0.9/ca755d9bfb823ef4b1ad596907c29a28/dragImgTmp/WeChatd855c27c61e2da5a5bc307bc4667b983.png)  
+
+windows平台请将图中./adb修改为adb
+
 ​	
 
 <p>需要USB连接手机</p>
