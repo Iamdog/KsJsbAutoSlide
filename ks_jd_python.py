@@ -6,7 +6,7 @@ import time
 TIME = 15
 # 100 1000为滑动开始坐标
 # 100 200为滑动停止坐标
-# 500 为滑动时长
+# 300 为滑动时长
 SHELLCOMMAND = "adb shell input swipe 100 1000 100 200 300"
 
 def adbShellCommand():
