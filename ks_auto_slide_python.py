@@ -8,6 +8,8 @@ TIME = 15
 # 100 200为滑动停止坐标
 # 300 为滑动时长
 SHELLCOMMAND = "./adb shell input swipe 100 1000 100 200 300"
+# 启动快手极速版
+STARTKSJSBAPP = "./adb shell am start -W -n com.kuaishou.nebula/com.yxcorp.gifshow.HomeActivity"
 
 def adbShellCommand():
     os.system(SHELLCOMMAND)
@@ -21,6 +23,8 @@ def timer(n):
 
 
 def main():
+    os.system(STARTKSJSBAPP)
+    time.sleep(5)
     timer(15)
 
 if __name__ == '__main__':
