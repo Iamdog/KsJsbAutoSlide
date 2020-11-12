@@ -9,7 +9,7 @@
 <p>执行adb devices查看手机是否连接</p>
 
 <h3>运行</h3>
-<p>python ks_jd_python.py</p>
+<p>python ks_auto_slide_python.py</p>
 
 ### 
 
