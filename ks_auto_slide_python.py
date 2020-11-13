@@ -1,7 +1,12 @@
 import os
 from datetime import datetime
 import time
+import random
 
+
+# 随机数的范围
+startRange = 10
+endRange = 20
 # 秒数 
 TIME = 15
 # 100 1000为滑动开始坐标
@@ -15,17 +20,19 @@ def adbShellCommand():
     os.system(SHELLCOMMAND)
 
 # 每n秒执行一次
-def timer(n):
+def timer():
     while True:
         print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         adbShellCommand()
-        time.sleep(n)
+        randomNum = random.randint(startRange,endRange)
+        print("时长:>>>>",randomNum)
+        time.sleep(randomNum)
 
 
 def main():
     os.system(STARTKSJSBAPP)
     time.sleep(5)
-    timer(15)
+    timer()
 
 if __name__ == '__main__':
     main()
